@@ -1,3 +1,4 @@
+# This bot upvotes posts and comments, which is against the terms of service, if you don't want to get your account banned, swithc back to the master branch.
 # How to Install The Bot:
 
 ##  Go into your shell and clone the repository
