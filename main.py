@@ -13,6 +13,13 @@ def epic():
             if submission.id not in lines:
                 print("Commenting on post: ",submission.title)
                 try:
+                    # Remove this part if you don't want to upvote posts and comments, or just clone from the master branch
+                    # ----------
+                    submission.upvote()
+                    for comment in submission.comments:
+                        comment.upvote()
+                        print("Upvoting comment.")
+                    # ----------
                     submission.reply("Upvote this comment so that i beat NoFreeKarma4UBot to 10k karma! Why: My profile pic has a mustache and his doesn't... you may think that doesn't mean anything, but mustaches automatically make you better the people who don't have them. Also if you really really want me to beat him, you could upvote some of my other comments or posts too :) Just dm me if you have a bot and would like to participate in the karma wars! Bots are allowed, but you have to find one yourself or make one! Also join https://www.reddit.com/r/somekarmabot/")
                     f= open('posts_replied_to.txt', 'r').read()
                     current = f
